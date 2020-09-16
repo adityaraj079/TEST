@@ -1,23 +1,27 @@
 # TEST
 
 ```
-partition (arr[], low, high)
-{
-    // pivot (Element to be placed at right position)
-    pivot = arr[high];  
- 
-    i = (low - 1)  // Index of smaller element
-
-    for (j = low; j <= high- 1; j++)
-    {
-        // If current element is smaller than the pivot
-        if (arr[j] < pivot)
-        {
-            i++;    // increment index of smaller element
-            swap arr[i] and arr[j]
-        }
-    }
-    swap arr[i + 1] and arr[high])
-    return (i + 1)
-}
+procedure insertionSort( A : array of items )
+   int holePosition
+   int valueToInsert
+	
+   for i = 1 to length(A) inclusive do:
+	
+      /* select value to be inserted */
+      valueToInsert = A[i]
+      holePosition = i
+      
+      /*locate hole position for the element to be inserted */
+		
+      while holePosition > 0 and A[holePosition-1] > valueToInsert do:
+         A[holePosition] = A[holePosition-1]
+         holePosition = holePosition -1
+      end while
+		
+      /* insert the number at hole position */
+      A[holePosition] = valueToInsert
+      
+   end for
+	
+end procedure
 ```
