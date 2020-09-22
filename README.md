@@ -1,15 +1,21 @@
 # TEST
 
 ```
-For k  1 to n-1
+Selection_sort (A,n)
 {
-	For i  0 to n-k-1
-	{
-		if(A[i] > A[i+1])
-		{
-			Swap(A[i], A[i+1]);
-		}
-	}
+	for i  0 to n-2
+{
+imin  i
+for ji +1 to n-1
+{
+If(A[j]<A[imin])
+imin  j
 }
+Temp  A[i]
+A[i]  A[imin]
+A[imin]temp
+}
+}
+
 
 ```
