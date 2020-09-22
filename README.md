@@ -9,7 +9,6 @@ procedure linear_search (list, value)
       end if
    end for
 	
-
-
+end procedure
 
 ```
