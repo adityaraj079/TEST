@@ -1,14 +1,13 @@
 # TEST
 
 ```
-procedure linear_search (list, value)
+void BF(char *x, int m, char *y, int n) { 
+  char *yb; 
+  /* Searching */ 
+  for (yb = y; *y != EOS; ++y) 
+    if (memcmp(x, y, m) == 0) 
+      OUTPUT(y - yb);
+}
 
-   for each item in the list
-      if match item == value
-         return the item's location
-      end if
-   end for
-	
-end procedure
 
 ```
