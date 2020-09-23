@@ -1,16 +1,15 @@
 # TEST
 
 ```
-Mergesort (l, h)
-{
-if (l< h)
-{
-Mid = (l + h)/2
-Mergesort (l, Mid)
-Mergesort (Mid+1, h)
-Merge (l, Mid, h)
-}
-}
-
+INSERTION-SORT(A) 
+for i = 1 to n 
+   key ← A [i]
+   j ← i – 1 
+  while j > = 0 and A[j] > key 
+  A[j+1] ← A[j]
+   j ← j – 1 
+  End while 
+  A[j+1] ← key 
+End for
 
 ```
