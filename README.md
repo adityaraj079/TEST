@@ -1,15 +1,14 @@
 # TEST
 
 ```
-INSERTION-SORT(A) 
-for i = 1 to n 
-   key ← A [i]
-   j ← i – 1 
-  while j > = 0 and A[j] > key 
-  A[j+1] ← A[j]
-   j ← j – 1 
-  End while 
-  A[j+1] ← key 
-End for
+MCSR(A,p,r)
+      1. if p==r
+              return A[p]
+      2. q=(p+r)/2
+      3. L=MCSR(A,p,r)
+      4. R=MCSR(A,q+1,r)
+      5. C=left_sum()+right_sum()
+return MAX(L,R,C)
+
 
 ```
