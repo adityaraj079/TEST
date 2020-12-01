@@ -9,6 +9,4 @@ MCSR(A,p,r)
       4. R=MCSR(A,q+1,r)
       5. C=left_sum()+right_sum()
 return MAX(L,R,C)
-
-
 ```
